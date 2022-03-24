@@ -1,13 +1,16 @@
 <template>
   <div class="footer">
-    <strong>Desenvolvido por <span>Daniela Oliveira</span> </strong>
+    <strong
+      >Desenvolvido por
+      <a href="https://github.com/daniela-mo/Portfolio">Daniela Oliveira</a>
+    </strong>
     <p>® Copyright 2022. Todos os Direitos Reservados.</p>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .footer {
-  padding-top: 50px;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,13 +20,27 @@
   strong {
     font-weight: 300;
   }
-  span {
+  a {
     font-weight: 600;
     color: #9667aa;
   }
-  span:hover {
+  a:hover {
     color: #9d0be0;
     transition: 0.3s;
+  }
+  @media (max-width: 500px) {
+    align-items: center;
+    justify-content: center;
+    strong,
+    p {
+      font-size: 12px;
+      font-weight: 300;
+    }
+    a {
+      font-size: 12px;
+      font-weight: 600;
+      color: #9667aa;
+    }
   }
 }
 </style>

@@ -110,5 +110,17 @@ script
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      width: 300px;
+      height: 149px;
+      padding: 20px 183px;
+    }
+  }
 }
 </style>

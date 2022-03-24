@@ -84,5 +84,10 @@ export default {
   p {
     font: 400 1rem "Roboto Mono", sans-serif;
   }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
 }
 </style>

@@ -1,7 +1,5 @@
 <template>
   <div class="header">
-    <p class="header__name">[DANIELA]</p>
-
     <nav>
       <ul class="header__menu">
         <li><a href="#projetos">Projetos</a></li>
@@ -19,21 +17,14 @@ export default {};
 .header {
   padding-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  &__name {
-    background: linear-gradient(to right, #a744d4 30%, #9d0be0 70%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    line-height: 1.1;
-    font-size: 1.5rem;
-  }
+
   &__menu {
     display: flex;
+    margin-bottom: 50px;
     gap: 30px;
   }
   &__menu a {
@@ -64,6 +55,28 @@ export default {};
   &__menu a:hover::after {
     width: 100%;
     transition: 0.3s;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    &__menu {
+      margin: 10px 0 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        padding: 0;
+        margin: 0;
+        border: 1px solid #9d0be0;
+        border-radius: 4px;
+        a {
+          padding: 5px 10px;
+          margin: 0;
+        }
+      }
+    }
   }
 }
 </style>

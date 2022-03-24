@@ -62,7 +62,7 @@ export default {};
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 80px;
+  margin-top: 80px;
   &__description {
     font-size: 18px;
     font-weight: 400;
@@ -136,6 +136,15 @@ export default {};
     }
     &__repositorio a:hover::after {
       opacity: 1;
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+    &__projetos {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
     }
   }
 }
