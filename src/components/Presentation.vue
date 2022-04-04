@@ -5,12 +5,11 @@
       <h1 v-html="paper"></h1>
       <p class="presentation__desc texto">{{ description }}</p>
 
-      <!-- <input type="checkbox" class="presentation__checkbox" id="check" /> -->
-      <label class="label" for="check">
+      <!-- <label class="label" for="check">
         <i class="fa-solid fa-moon" style="color#fff"></i>
         <i class="fa-solid fa-sun" style="color#fff"></i>
         <div class="btn"></div>
-      </label>
+      </label> -->
     </div>
   </div>
 </template>
@@ -36,7 +35,7 @@ export default {
         i++;
         const x = i % this.h1.length;
         this.paper += this.h1[x];
-      }, 200 - Math.random() * 30);
+      }, 300 - Math.random() * 50);
     },
 
     stoper() {
@@ -80,9 +79,11 @@ export default {
   }
   .texto {
     margin-top: 5px;
+    color: rgb(52, 52, 52);
   }
   p {
     font: 400 1rem "Roboto Mono", sans-serif;
+    color: rgb(52, 52, 52);
   }
   @media (max-width: 500px) {
     flex-direction: column;

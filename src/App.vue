@@ -5,7 +5,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {},
+};
 </script>
 
 <style lang="scss">
@@ -18,10 +20,20 @@ export default {};
 }
 
 body {
-  background: #171717;
+  /* background: #626161; */
+  background: url("assets/geometry2.png");
   font-family: "Roboto Mono", "Roboto";
   color: #f9f9f9;
-  transition: background 0.2s linear;
+  /* transition: background 0.2s linear; */
+}
+[data-theme="darkMode"] {
+  /* Variables for dark mode */
+  --background-color: black;
+  --text-color: white;
+}
+.example {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 #back-to-top {
   cursor: pointer;

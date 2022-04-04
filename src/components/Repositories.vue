@@ -66,6 +66,7 @@ export default {};
   &__description {
     font-size: 18px;
     font-weight: 400;
+    color: rgb(52, 52, 52);
   }
   &__title {
     font: bold 1.8rem/1.1 "Roboto Mono";
@@ -110,14 +111,15 @@ export default {};
       }
     }
     &__repositorio:hover {
-      background-color: #000;
+      color: rgb(52, 52, 52);
+      /* background-color: #d4d0d0; */
       border: 1px solid #9d0be0;
     }
     &__repositorio a {
       /* background: linear-gradient(to left, #c19ed1 30%, #9d0be0 70%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; */
-      background: rgba(121, 120, 120, 0.2);
+      background: #79787833;
       display: inline-block;
       font-weight: 700;
       padding: 10px;
@@ -130,7 +132,6 @@ export default {};
       transition: all 0.3 cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     &__repositorio a:hover {
-      background: #1d1d1d;
       transform: scale(1.1);
       color: #9d0be0;
     }

@@ -17,8 +17,10 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  strong {
-    font-weight: 300;
+  strong,
+  p {
+    font-weight: 400;
+    color: rgb(52, 52, 52);
   }
   a {
     font-weight: 600;
@@ -35,6 +37,7 @@
     p {
       font-size: 12px;
       font-weight: 300;
+      color: rgb(52, 52, 52);
     }
     a {
       font-size: 12px;

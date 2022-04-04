@@ -53,7 +53,6 @@
   </div>
 </template>
 
-script
 <style lang="scss" scoped>
 .social {
   max-width: 1200px;
@@ -62,6 +61,7 @@ script
   &__description {
     font-size: 18px;
     font-weight: 400;
+    color: rgb(52, 52, 52);
   }
   &__title {
     font: bold 1.8rem/1.1 "Roboto Mono";
@@ -100,7 +100,7 @@ script
     }
   }
   &__link:hover {
-    background-color: #000;
+    /* background-color: #000; */
     border: 1px solid #9d0be0;
   }
 
